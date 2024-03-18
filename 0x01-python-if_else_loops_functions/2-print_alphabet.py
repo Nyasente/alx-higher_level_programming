@@ -4,4 +4,4 @@ Prints alphabet letters in lowercase.
 For: A loop to print all the ASCII characters in lowercase.
 '''
 for char in range(97, 123):
-    print(chr(char), end='')
+    print(f"{chr(char)}", end='')
