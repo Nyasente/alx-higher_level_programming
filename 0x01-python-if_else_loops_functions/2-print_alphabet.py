@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 '''
-print-returns alphabet letters in lower case
-for: a loop to print all the ASCII characters in lower case
+Prints alphabet letters in lowercase.
+For: A loop to print all the ASCII characters in lowercase.
 '''
-for alphabets in range(97, 123):
-    print(chr(alphabets), end='')
+for char in range(97, 123):
+    print(f"{chr(char)}", end='')
