@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 """
-print- ascii for a to z excluding q and e
+print- retrns all letters except q,e
+for: loop iterates over every word
+if : loop to check for q,e imposter
 """
-for alphabet in range(97, 123):
-    if alphabet not in (101, 113):
-        print (chr(alphabet), end='')
+for letters in range(ord('a'), ord('z') +1):
+    letters = chr(letters)
+    if letters not in "q,e":
+        print(letters, end='')
