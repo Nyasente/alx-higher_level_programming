@@ -5,6 +5,6 @@ for: loop iterates over every word
 if : loop to check for q,e imposter
 """
 for letters in range(ord('a'), ord('z') + 1):
-    letters = chr(letters)
-    if letters not in "q,e":
-        print("{}".format(letters), end='')
+    if letters in (ord('q'), ord('e')):
+        continue
+    print("{}".format(chr(letters)), end='')
